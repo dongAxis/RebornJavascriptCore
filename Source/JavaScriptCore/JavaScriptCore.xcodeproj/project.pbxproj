@@ -4948,6 +4948,7 @@
 		0FEA09FC1705137F00BB722C /* ftl */ = {
 			isa = PBXGroup;
 			children = (
+				CBA19240204555D30033DD66 /* LLVMOpt */,
 				0FDB2CC7173DA51E007B3C1B /* FTLAbbreviatedTypes.h */,
 				0FEA0A171708B00700BB722C /* FTLAbstractHeap.cpp */,
 				0FEA0A181708B00700BB722C /* FTLAbstractHeap.h */,
@@ -8020,6 +8021,13 @@
 				C4F4B6D81A05C76F005CAB76 /* objc_generator_templates.py */,
 			);
 			path = codegen;
+			sourceTree = "<group>";
+		};
+		CBA19240204555D30033DD66 /* LLVMOpt */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LLVMOpt;
 			sourceTree = "<group>";
 		};
 		E3FF752D1D9CE9EA00C7E16D /* domjit */ = {
