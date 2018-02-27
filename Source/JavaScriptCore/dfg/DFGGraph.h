@@ -37,6 +37,7 @@
 #include "DFGPlan.h"
 #include "DFGPropertyTypeKey.h"
 #include "DFGScannable.h"
+#include "DFGGraphWriter.h"
 #include "FullBytecodeLiveness.h"
 #include "MethodOfGettingAValueProfile.h"
 #include <unordered_map>
@@ -139,6 +140,21 @@ class Graph : public virtual Scannable {
 public:
     Graph(VM&, Plan&);
     ~Graph();
+    
+    WTF::CString getCodeBlockInnerName() {
+        return this->m_codeBlock->inferredName();
+    }
+    
+    inline void viewCFG(GraphType type __unused = DOT) {
+        
+        // 1. we need construct a new file name of graph file based on graph type
+        std::string fileName = "";
+        fileName += std::string("cfg_");
+        fileName += this->getCodeBlockInnerName().data();           // name of code block
+        fileName += std::string(".") + std::string(getGraphTypeString(type).data());                 // graph type
+        
+        viewCFGBaseOnGraph(*this, fileName, type);
+    }
     
     void changeChild(Edge& edge, Node* newNode)
     {

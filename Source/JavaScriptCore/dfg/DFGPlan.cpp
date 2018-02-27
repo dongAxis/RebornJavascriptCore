@@ -487,36 +487,44 @@ Plan::CompilationPath Plan::compileInThreadImpl()
         if (safepointResult.didGetCancelled())
             return CancelPath;
 
-        FTL::State state(dfg);
-        FTL::lowerDFGToB3(state);
-        
-        if (UNLIKELY(computeCompileTimes()))
-            m_timeBeforeFTL = MonotonicTime::now();
-        
-        if (Options::b3AlwaysFailsBeforeCompile()) {
-            FTL::fail(state);
-            return FTLPath;
+        if(Options::useLLVMAsDefaultBackend()) {
+//            __asm__("int3");
+            
+            // 1. now
+            dfg.viewCFG();
         }
-        
-        FTL::compile(state, safepointResult);
-        if (safepointResult.didGetCancelled())
-            return CancelPath;
-        
-        if (Options::b3AlwaysFailsBeforeLink()) {
-            FTL::fail(state);
-            return FTLPath;
-        }
-        
-        if (state.allocationFailed) {
-            FTL::fail(state);
-            return FTLPath;
-        }
+        else {
+            FTL::State state(dfg);
+            FTL::lowerDFGToB3(state);
+            
+            if (UNLIKELY(computeCompileTimes()))
+                m_timeBeforeFTL = MonotonicTime::now();
+            
+            if (Options::b3AlwaysFailsBeforeCompile()) {
+                FTL::fail(state);
+                return FTLPath;
+            }
+            
+            FTL::compile(state, safepointResult);
+            if (safepointResult.didGetCancelled())
+                return CancelPath;
+            
+            if (Options::b3AlwaysFailsBeforeLink()) {
+                FTL::fail(state);
+                return FTLPath;
+            }
+            
+            if (state.allocationFailed) {
+                FTL::fail(state);
+                return FTLPath;
+            }
 
-        FTL::link(state);
-        
-        if (state.allocationFailed) {
-            FTL::fail(state);
-            return FTLPath;
+            FTL::link(state);
+            
+            if (state.allocationFailed) {
+                FTL::fail(state);
+                return FTLPath;
+            }
         }
         
         return FTLPath;

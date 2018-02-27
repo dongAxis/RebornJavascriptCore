@@ -1648,6 +1648,8 @@
 		C4F4B6F41A05C944005CAB76 /* cpp_generator.py in Headers */ = {isa = PBXBuildFile; fileRef = C4F4B6D01A05C76F005CAB76 /* cpp_generator.py */; settings = {ATTRIBUTES = (Private, ); }; };
 		C4F4B6F51A05C984005CAB76 /* generate_objc_protocol_types_implementation.py in Headers */ = {isa = PBXBuildFile; fileRef = C4F4B6D71A05C76F005CAB76 /* generate_objc_protocol_types_implementation.py */; settings = {ATTRIBUTES = (Private, ); }; };
 		C4F4B6F61A05C984005CAB76 /* objc_generator_templates.py in Headers */ = {isa = PBXBuildFile; fileRef = C4F4B6D81A05C76F005CAB76 /* objc_generator_templates.py */; settings = {ATTRIBUTES = (Private, ); }; };
+		CBD926C52043FD7300CFA117 /* DFGGraphWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBD926C32043FD7300CFA117 /* DFGGraphWriter.cpp */; };
+		CBD926C62043FD7300CFA117 /* DFGGraphWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD926C42043FD7300CFA117 /* DFGGraphWriter.h */; };
 		CEAE7D7B889B477BA93ABA6C /* ScriptFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8852151A9C3842389B3215B7 /* ScriptFetcher.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D9722752DC54459B9125B539 /* JSModuleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B25CB2C3094A92A38E1DB3 /* JSModuleLoader.h */; };
 		DC00039319D8BE6F00023EB0 /* DFGPreciseLocalClobberize.h in Headers */ = {isa = PBXBuildFile; fileRef = DC00039019D8BE6F00023EB0 /* DFGPreciseLocalClobberize.h */; };
@@ -4468,6 +4470,8 @@
 		C4F4B6D61A05C76F005CAB76 /* generate_cpp_protocol_types_implementation.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = generate_cpp_protocol_types_implementation.py; sourceTree = "<group>"; };
 		C4F4B6D71A05C76F005CAB76 /* generate_objc_protocol_types_implementation.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = generate_objc_protocol_types_implementation.py; sourceTree = "<group>"; };
 		C4F4B6D81A05C76F005CAB76 /* objc_generator_templates.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = objc_generator_templates.py; sourceTree = "<group>"; };
+		CBD926C32043FD7300CFA117 /* DFGGraphWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DFGGraphWriter.cpp; path = dfg/DFGGraphWriter.cpp; sourceTree = "<group>"; };
+		CBD926C42043FD7300CFA117 /* DFGGraphWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DFGGraphWriter.h; path = dfg/DFGGraphWriter.h; sourceTree = "<group>"; };
 		D21202280AD4310C00ED79B6 /* DateConversion.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DateConversion.cpp; sourceTree = "<group>"; };
 		D21202290AD4310C00ED79B6 /* DateConversion.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DateConversion.h; sourceTree = "<group>"; };
 		DC00039019D8BE6F00023EB0 /* DFGPreciseLocalClobberize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DFGPreciseLocalClobberize.h; path = dfg/DFGPreciseLocalClobberize.h; sourceTree = "<group>"; };
@@ -7379,6 +7383,8 @@
 				0FDB2CE5174830A2007B3C1B /* DFGWorklist.cpp */,
 				0FDB2CE6174830A2007B3C1B /* DFGWorklist.h */,
 				0F1FB3951E1AF7DF00A9BE50 /* DFGWorklistInlines.h */,
+				CBD926C32043FD7300CFA117 /* DFGGraphWriter.cpp */,
+				CBD926C42043FD7300CFA117 /* DFGGraphWriter.h */,
 			);
 			name = dfg;
 			sourceTree = "<group>";
@@ -8139,6 +8145,7 @@
 				0F8335B81639C1EA001443B5 /* ArrayAllocationProfile.h in Headers */,
 				A7A8AF3517ADB5F3005AB174 /* ArrayBuffer.h in Headers */,
 				0FFC99D5184EE318009C10AB /* ArrayBufferNeuteringWatchpoint.h in Headers */,
+				CBD926C62043FD7300CFA117 /* DFGGraphWriter.h in Headers */,
 				0F30FB611DC2DE99003124F2 /* ArrayBufferSharingMode.h in Headers */,
 				A7A8AF3717ADB5F3005AB174 /* ArrayBufferView.h in Headers */,
 				BC18C3E60E16F5CD00B34460 /* ArrayConstructor.h in Headers */,
@@ -10158,6 +10165,7 @@
 				536B31421F71C5990037FC33 /* UnifiedSource90.cpp in Sources */,
 				536B31491F71C5990037FC33 /* UnifiedSource91.cpp in Sources */,
 				536B31521F71C5990037FC33 /* UnifiedSource92.cpp in Sources */,
+				CBD926C52043FD7300CFA117 /* DFGGraphWriter.cpp in Sources */,
 				536B314B1F71C5990037FC33 /* UnifiedSource93.cpp in Sources */,
 				536B31411F71C5990037FC33 /* UnifiedSource94.cpp in Sources */,
 				536B31381F71C5990037FC33 /* UnifiedSource95.cpp in Sources */,
@@ -10511,6 +10519,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C9051430BA9E8A70081E9D0 /* JavaScriptCore.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 			};
 			name = Debug;
 		};
@@ -10518,6 +10528,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C9051430BA9E8A70081E9D0 /* JavaScriptCore.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 			};
 			name = Release;
 		};
@@ -10526,6 +10538,8 @@
 			baseConfigurationReference = 1C9051430BA9E8A70081E9D0 /* JavaScriptCore.xcconfig */;
 			buildSettings = {
 				BUILD_VARIANTS = normal;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 			};
 			name = Production;
 		};
@@ -10781,6 +10795,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C9051430BA9E8A70081E9D0 /* JavaScriptCore.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 			};
 			name = Profiling;
 		};

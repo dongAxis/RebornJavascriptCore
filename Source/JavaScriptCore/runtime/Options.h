@@ -488,7 +488,8 @@ constexpr bool enableAsyncIteration = false;
     v(bool, useObjectRestSpread, true, Normal, "If true, we will enable Object Rest/Spread feature.") \
     v(bool, useBigInt, false, Normal, "If true, we will enable BigInt support.") \
     v(bool, useArrayAllocationProfiling, true, Normal, "If true, we will use our normal array allocation profiling. If false, the allocation profile will always claim to be undecided.")\
-    v(bool, forcePolyProto, false, Normal, "If true, create_this will always create an object with a poly proto structure.")
+    v(bool, forcePolyProto, false, Normal, "If true, create_this will always create an object with a poly proto structure.")\
+    v(bool, useLLVMAsDefaultBackend, true, Normal, "Now we need use the LLVM as FTL backend.")
 
 
 enum OptionEquivalence {
