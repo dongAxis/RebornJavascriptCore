@@ -90,6 +90,9 @@
 #include "FTLState.h"
 #endif
 
+// for llvm jit
+#include "InitializeLLVM.hpp"
+
 namespace JSC {
 
 extern Seconds totalDFGCompileTime;
@@ -488,10 +491,12 @@ Plan::CompilationPath Plan::compileInThreadImpl()
             return CancelPath;
 
         if(Options::useLLVMAsDefaultBackend()) {
-//            __asm__("int3");
             
-            // 1. now
-            dfg.viewCFG();
+            {
+                GraphSafepoint safepoint(dfg, safepointResult);
+                initializeLLVM();
+            }
+            
         }
         else {
             FTL::State state(dfg);

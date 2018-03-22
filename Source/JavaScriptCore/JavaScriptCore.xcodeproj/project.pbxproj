@@ -1648,6 +1648,15 @@
 		C4F4B6F41A05C944005CAB76 /* cpp_generator.py in Headers */ = {isa = PBXBuildFile; fileRef = C4F4B6D01A05C76F005CAB76 /* cpp_generator.py */; settings = {ATTRIBUTES = (Private, ); }; };
 		C4F4B6F51A05C984005CAB76 /* generate_objc_protocol_types_implementation.py in Headers */ = {isa = PBXBuildFile; fileRef = C4F4B6D71A05C76F005CAB76 /* generate_objc_protocol_types_implementation.py */; settings = {ATTRIBUTES = (Private, ); }; };
 		C4F4B6F61A05C984005CAB76 /* objc_generator_templates.py in Headers */ = {isa = PBXBuildFile; fileRef = C4F4B6D81A05C76F005CAB76 /* objc_generator_templates.py */; settings = {ATTRIBUTES = (Private, ); }; };
+		CB22109920635B5100746175 /* LLVMExports.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB22109820635B5100746175 /* LLVMExports.cpp */; };
+		CB2210A620637DBD00746175 /* LLVMAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB2210A420637DBD00746175 /* LLVMAPI.cpp */; };
+		CB2210A9206382D800746175 /* LLVMOverride.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB2210A8206382D800746175 /* LLVMOverride.cpp */; };
+		CB81CE2C2063910E00D7E0B6 /* InitializeLLVM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB81CE2A2063910E00D7E0B6 /* InitializeLLVM.cpp */; };
+		CB81CE2D2063910E00D7E0B6 /* InitializeLLVM.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CB81CE2B2063910E00D7E0B6 /* InitializeLLVM.hpp */; };
+		CB81CE302063926000D7E0B6 /* initializeLLVMPOSIX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB81CE2E2063926000D7E0B6 /* initializeLLVMPOSIX.cpp */; };
+		CB81CE312063926000D7E0B6 /* initializeLLVMPOSIX.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CB81CE2F2063926000D7E0B6 /* initializeLLVMPOSIX.hpp */; };
+		CBA1924420464C100033DD66 /* LLVMOptDominator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBA1924220464C100033DD66 /* LLVMOptDominator.cpp */; };
+		CBA1924520464C100033DD66 /* LLVMOptDominator.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA1924320464C100033DD66 /* LLVMOptDominator.h */; };
 		CBD926C52043FD7300CFA117 /* DFGGraphWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBD926C32043FD7300CFA117 /* DFGGraphWriter.cpp */; };
 		CBD926C62043FD7300CFA117 /* DFGGraphWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD926C42043FD7300CFA117 /* DFGGraphWriter.h */; };
 		CEAE7D7B889B477BA93ABA6C /* ScriptFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8852151A9C3842389B3215B7 /* ScriptFetcher.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -4470,6 +4479,21 @@
 		C4F4B6D61A05C76F005CAB76 /* generate_cpp_protocol_types_implementation.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = generate_cpp_protocol_types_implementation.py; sourceTree = "<group>"; };
 		C4F4B6D71A05C76F005CAB76 /* generate_objc_protocol_types_implementation.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = generate_objc_protocol_types_implementation.py; sourceTree = "<group>"; };
 		C4F4B6D81A05C76F005CAB76 /* objc_generator_templates.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = objc_generator_templates.py; sourceTree = "<group>"; };
+		CB22109420635B5100746175 /* libllvmForJSC.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libllvmForJSC.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB22109820635B5100746175 /* LLVMExports.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LLVMExports.cpp; sourceTree = "<group>"; };
+		CB2210A12063744600746175 /* LLVMHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLVMHeader.h; sourceTree = "<group>"; };
+		CB2210A22063788500746175 /* LLVMAPIFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLVMAPIFunctions.h; sourceTree = "<group>"; };
+		CB2210A320637CD400746175 /* LLVMAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLVMAPI.h; sourceTree = "<group>"; };
+		CB2210A420637DBD00746175 /* LLVMAPI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LLVMAPI.cpp; sourceTree = "<group>"; };
+		CB2210A8206382D800746175 /* LLVMOverride.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LLVMOverride.cpp; sourceTree = "<group>"; };
+		CB2210AA206383EA00746175 /* LLVMTrapCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLVMTrapCallback.h; sourceTree = "<group>"; };
+		CB81CE2A2063910E00D7E0B6 /* InitializeLLVM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InitializeLLVM.cpp; sourceTree = "<group>"; };
+		CB81CE2B2063910E00D7E0B6 /* InitializeLLVM.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InitializeLLVM.hpp; sourceTree = "<group>"; };
+		CB81CE2E2063926000D7E0B6 /* initializeLLVMPOSIX.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = initializeLLVMPOSIX.cpp; sourceTree = "<group>"; };
+		CB81CE2F2063926000D7E0B6 /* initializeLLVMPOSIX.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = initializeLLVMPOSIX.hpp; sourceTree = "<group>"; };
+		CBA1924120464BCD0033DD66 /* LLVMConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLVMConfig.h; path = dfg/LLVMOpt/LLVMConfig.h; sourceTree = "<group>"; };
+		CBA1924220464C100033DD66 /* LLVMOptDominator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LLVMOptDominator.cpp; path = dfg/LLVMOpt/LLVMOptDominator.cpp; sourceTree = "<group>"; };
+		CBA1924320464C100033DD66 /* LLVMOptDominator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLVMOptDominator.h; path = dfg/LLVMOpt/LLVMOptDominator.h; sourceTree = "<group>"; };
 		CBD926C32043FD7300CFA117 /* DFGGraphWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DFGGraphWriter.cpp; path = dfg/DFGGraphWriter.cpp; sourceTree = "<group>"; };
 		CBD926C42043FD7300CFA117 /* DFGGraphWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DFGGraphWriter.h; path = dfg/DFGGraphWriter.h; sourceTree = "<group>"; };
 		D21202280AD4310C00ED79B6 /* DateConversion.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DateConversion.cpp; sourceTree = "<group>"; };
@@ -4819,6 +4843,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB22109120635B5100746175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE533CA41F217DB30016A1FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -4844,6 +4875,7 @@
 				FE533CAC1F217DB40016A1FE /* testmasm */,
 				6511230514046A4C002B101D /* testRegExp */,
 				932F5BD90822A1C700736975 /* JavaScriptCore.framework */,
+				CB22109420635B5100746175 /* libllvmForJSC.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4877,6 +4909,8 @@
 				86EC9DB31328DF44002B2AD7 /* dfg */,
 				0FF4272E158EBCCE004CB9FF /* disassembler */,
 				E3FF752D1D9CE9EA00C7E16D /* domjit */,
+				CB2210A0206373A600746175 /* llvm */,
+				CB22109520635B5100746175 /* llvmForJSC */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				0FEA09FC1705137F00BB722C /* ftl */,
 				142E312A134FF0A600AFADB5 /* heap */,
@@ -8023,9 +8057,37 @@
 			path = codegen;
 			sourceTree = "<group>";
 		};
+		CB22109520635B5100746175 /* llvmForJSC */ = {
+			isa = PBXGroup;
+			children = (
+				CB22109820635B5100746175 /* LLVMExports.cpp */,
+				CB2210A8206382D800746175 /* LLVMOverride.cpp */,
+				CB2210AA206383EA00746175 /* LLVMTrapCallback.h */,
+			);
+			path = llvmForJSC;
+			sourceTree = "<group>";
+		};
+		CB2210A0206373A600746175 /* llvm */ = {
+			isa = PBXGroup;
+			children = (
+				CB2210A12063744600746175 /* LLVMHeader.h */,
+				CB2210A22063788500746175 /* LLVMAPIFunctions.h */,
+				CB2210A320637CD400746175 /* LLVMAPI.h */,
+				CB2210A420637DBD00746175 /* LLVMAPI.cpp */,
+				CB81CE2A2063910E00D7E0B6 /* InitializeLLVM.cpp */,
+				CB81CE2B2063910E00D7E0B6 /* InitializeLLVM.hpp */,
+				CB81CE2E2063926000D7E0B6 /* initializeLLVMPOSIX.cpp */,
+				CB81CE2F2063926000D7E0B6 /* initializeLLVMPOSIX.hpp */,
+			);
+			path = llvm;
+			sourceTree = "<group>";
+		};
 		CBA19240204555D30033DD66 /* LLVMOpt */ = {
 			isa = PBXGroup;
 			children = (
+				CBA1924120464BCD0033DD66 /* LLVMConfig.h */,
+				CBA1924220464C100033DD66 /* LLVMOptDominator.cpp */,
+				CBA1924320464C100033DD66 /* LLVMOptDominator.h */,
 			);
 			name = LLVMOpt;
 			sourceTree = "<group>";
@@ -8668,6 +8730,7 @@
 				0F2B9CF519D0BAC100B1D1B5 /* FTLExitPropertyValue.h in Headers */,
 				0F2B9CF719D0BAC100B1D1B5 /* FTLExitTimeObjectMaterialization.h in Headers */,
 				0F235BDB17178E1C00690C7F /* FTLExitValue.h in Headers */,
+				CB81CE2D2063910E00D7E0B6 /* InitializeLLVM.hpp in Headers */,
 				A7F2996C17A0BB670010417A /* FTLFail.h in Headers */,
 				0FEA0A2C170B661900BB722C /* FTLFormattedValue.h in Headers */,
 				0FD8A31A17D51F2200CA2C40 /* FTLForOSREntryJITCode.h in Headers */,
@@ -9404,6 +9467,7 @@
 				0FF42741158EBE8D004CB9FF /* udis86_decode.h in Headers */,
 				0FF42742158EBE91004CB9FF /* udis86_extern.h in Headers */,
 				0FF42748158EBE91004CB9FF /* udis86_syn.h in Headers */,
+				CB81CE312063926000D7E0B6 /* initializeLLVMPOSIX.hpp in Headers */,
 				0FF42749158EBE91004CB9FF /* udis86_types.h in Headers */,
 				A7E5AB391799E4B200D2833D /* UDis86Disassembler.h in Headers */,
 				A7A8AF4117ADB5F3005AB174 /* Uint16Array.h in Headers */,
@@ -9495,6 +9559,7 @@
 				709FB86A1AE335C60039D069 /* WeakSetConstructor.h in Headers */,
 				14150133154BB13F005D8C98 /* WeakSetInlines.h in Headers */,
 				709FB86C1AE335C60039D069 /* WeakSetPrototype.h in Headers */,
+				CBA1924520464C100033DD66 /* LLVMOptDominator.h in Headers */,
 				AD2FCBED1DB58DAD00B3E736 /* WebAssemblyCompileErrorConstructor.h in Headers */,
 				AD2FCC161DB59CB200B3E736 /* WebAssemblyCompileErrorConstructor.lut.h in Headers */,
 				AD2FCBEF1DB58DAD00B3E736 /* WebAssemblyCompileErrorPrototype.h in Headers */,
@@ -9541,6 +9606,13 @@
 				86704B8A12DBA33700A9FE7B /* YarrPattern.h in Headers */,
 				86704B4312DB8A8100A9FE7B /* YarrSyntaxChecker.h in Headers */,
 				659CDA5B1F6753F200D3E53F /* YarrUnicodeProperties.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB22109220635B5100746175 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9713,6 +9785,23 @@
 			productReference = 932F5BE10822A1C700736975 /* jsc */;
 			productType = "com.apple.product-type.tool";
 		};
+		CB22109320635B5100746175 /* llvmForJSC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB22109A20635B5100746175 /* Build configuration list for PBXNativeTarget "llvmForJSC" */;
+			buildPhases = (
+				CB22109020635B5100746175 /* Sources */,
+				CB22109120635B5100746175 /* Frameworks */,
+				CB22109220635B5100746175 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = llvmForJSC;
+			productName = llvmForJSC;
+			productReference = CB22109420635B5100746175 /* libllvmForJSC.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		FE533CA11F217DB30016A1FE /* testmasm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE533CA71F217DB30016A1FE /* Build configuration list for PBXNativeTarget "testmasm" */;
@@ -9738,6 +9827,12 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					CB22109320635B5100746175 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 149C277108902AFE008A9EFC /* Build configuration list for PBXProject "JavaScriptCore" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -9770,6 +9865,7 @@
 				0F93274E1C20BCBA00CF6564 /* dynbench */,
 				0F6183381C45F62A0072450B /* testair */,
 				FE533CA11F217DB30016A1FE /* testmasm */,
+				CB22109320635B5100746175 /* llvmForJSC */,
 			);
 		};
 /* End PBXProject section */
@@ -10100,6 +10196,7 @@
 				536B31751F71C5990037FC33 /* UnifiedSource17.cpp in Sources */,
 				536B31211F71C5990037FC33 /* UnifiedSource18.cpp in Sources */,
 				536B31221F71C5990037FC33 /* UnifiedSource19.cpp in Sources */,
+				CBA1924420464C100033DD66 /* LLVMOptDominator.cpp in Sources */,
 				536B311A1F71C5990037FC33 /* UnifiedSource20.cpp in Sources */,
 				536B31191F71C5990037FC33 /* UnifiedSource21.cpp in Sources */,
 				536B310F1F71C5990037FC33 /* UnifiedSource22.cpp in Sources */,
@@ -10189,6 +10286,7 @@
 				536B31781F71C5990037FC33 /* UnifiedSource105.cpp in Sources */,
 				536B317F1F71C5990037FC33 /* UnifiedSource106.cpp in Sources */,
 				536B317A1F71C5990037FC33 /* UnifiedSource107.cpp in Sources */,
+				CB81CE2C2063910E00D7E0B6 /* InitializeLLVM.cpp in Sources */,
 				536B31271F71C5990037FC33 /* UnifiedSource108.cpp in Sources */,
 				536B312C1F71C5990037FC33 /* UnifiedSource109.cpp in Sources */,
 				536B31741F71C5990037FC33 /* UnifiedSource110.cpp in Sources */,
@@ -10198,6 +10296,7 @@
 				536B318F1F71C5990037FC33 /* UnifiedSource114.cpp in Sources */,
 				536B318A1F71C5990037FC33 /* UnifiedSource115.cpp in Sources */,
 				536B31811F71C5990037FC33 /* UnifiedSource116.cpp in Sources */,
+				CB2210A620637DBD00746175 /* LLVMAPI.cpp in Sources */,
 				536B31881F71C5990037FC33 /* UnifiedSource117.cpp in Sources */,
 				536B31151F71C5990037FC33 /* UnifiedSource118.cpp in Sources */,
 				536B310C1F71C5990037FC33 /* UnifiedSource119.cpp in Sources */,
@@ -10212,6 +10311,7 @@
 				536B318E1F71C5990037FC33 /* UnifiedSource128.cpp in Sources */,
 				536B318B1F71C5990037FC33 /* UnifiedSource129.cpp in Sources */,
 				536B31131F71C5990037FC33 /* UnifiedSource130.cpp in Sources */,
+				CB81CE302063926000D7E0B6 /* initializeLLVMPOSIX.cpp in Sources */,
 				536B310E1F71C5990037FC33 /* UnifiedSource131.cpp in Sources */,
 				536B31161F71C5990037FC33 /* UnifiedSource132.cpp in Sources */,
 				536B311D1F71C5990037FC33 /* UnifiedSource133.cpp in Sources */,
@@ -10235,6 +10335,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				932F5BDD0822A1C700736975 /* jsc.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB22109020635B5100746175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2210A9206382D800746175 /* LLVMOverride.cpp in Sources */,
+				CB22109920635B5100746175 /* LLVMExports.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -10529,6 +10638,12 @@
 			buildSettings = {
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"${BUILT_PRODUCTS_DIR}/DerivedSources/JavaScriptCore\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
 			};
 			name = Debug;
 		};
@@ -10538,6 +10653,12 @@
 			buildSettings = {
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"${BUILT_PRODUCTS_DIR}/DerivedSources/JavaScriptCore\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
 			};
 			name = Release;
 		};
@@ -10548,6 +10669,12 @@
 				BUILD_VARIANTS = normal;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"${BUILT_PRODUCTS_DIR}/DerivedSources/JavaScriptCore\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
 			};
 			name = Production;
 		};
@@ -10600,7 +10727,19 @@
 				DEAD_CODE_STRIPPING = "$(DEAD_CODE_STRIPPING_debug)";
 				DEBUG_DEFINES = "$(DEBUG_DEFINES_debug)";
 				GCC_OPTIMIZATION_LEVEL = "$(GCC_OPTIMIZATION_LEVEL_debug)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"\"${BUILT_PRODUCTS_DIR}/usr/local/include\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
 				STRIP_INSTALLED_PRODUCT = "$(STRIP_INSTALLED_PRODUCT_debug)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/include";
 			};
 			name = Debug;
 		};
@@ -10608,7 +10747,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C9051440BA9E8A70081E9D0 /* DebugRelease.xcconfig */;
 			buildSettings = {
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"\"${BUILT_PRODUCTS_DIR}/usr/local/include\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
 				STRIP_INSTALLED_PRODUCT = NO;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/include";
 			};
 			name = Release;
 		};
@@ -10616,6 +10767,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C9051450BA9E8A70081E9D0 /* Base.xcconfig */;
 			buildSettings = {
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"\"${BUILT_PRODUCTS_DIR}/usr/local/include\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/include";
 			};
 			name = Production;
 		};
@@ -10788,7 +10951,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C9051440BA9E8A70081E9D0 /* DebugRelease.xcconfig */;
 			buildSettings = {
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"\"${BUILT_PRODUCTS_DIR}/usr/local/include\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
 				STRIP_INSTALLED_PRODUCT = NO;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/include";
 			};
 			name = Profiling;
 		};
@@ -10805,6 +10980,12 @@
 			buildSettings = {
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"${BUILT_PRODUCTS_DIR}/DerivedSources/JavaScriptCore\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
 			};
 			name = Profiling;
 		};
@@ -10836,6 +11017,281 @@
 			buildSettings = {
 			};
 			name = Profiling;
+		};
+		CB22109B20635B5100746175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"\"${BUILT_PRODUCTS_DIR}/usr/local/include\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
+				LLVM_LIBS_macosx = "-lLLVMLinker -lLLVMipo -lLLVMVectorize -lLLVMIRReader -lLLVMBitReader -lLLVMAsmParser -lLLVMSelectionDAG -lLLVMAsmPrinter -lLLVMMCParser -lLLVMDebugInfoDWARF -lLLVMOption -lLLVMCodeGen -lLLVMScalarOpts -lLLVMInstCombine -lLLVMTransformUtils  -lLLVMAnalysis -lLLVMMCDisassembler -lLLVMMCJIT -lLLVMTarget -lLLVMRuntimeDyld -lLLVMExecutionEngine -lLLVMMC -lLLVMObject -lLLVMCore -lLLVMSupport -lLLVMX86Disassembler     -lLLVMX86CodeGen     -lLLVMX86AsmParser     -lLLVMX86Desc     -lLLVMX86Info     -lLLVMX86AsmPrinter     -lLLVMX86Utils -lLLVMDebugInfoCodeView -lLLVMInstrumentation -lLLVMProfileData -lz -lcurses -lpthread";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(ASAN_OTHER_LDFLAGS)",
+					"$(LLVM_LIBS_macosx)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/include";
+			};
+			name = Debug;
+		};
+		CB22109C20635B5100746175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"\"${BUILT_PRODUCTS_DIR}/usr/local/include\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
+				LLVM_LIBS_macosx = "-lLLVMLinker -lLLVMipo -lLLVMVectorize -lLLVMIRReader -lLLVMBitReader -lLLVMAsmParser -lLLVMSelectionDAG -lLLVMAsmPrinter -lLLVMMCParser -lLLVMDebugInfoDWARF -lLLVMOption -lLLVMCodeGen -lLLVMScalarOpts -lLLVMInstCombine -lLLVMTransformUtils  -lLLVMAnalysis -lLLVMMCDisassembler -lLLVMMCJIT -lLLVMTarget -lLLVMRuntimeDyld -lLLVMExecutionEngine -lLLVMMC -lLLVMObject -lLLVMCore -lLLVMSupport -lLLVMX86Disassembler     -lLLVMX86CodeGen     -lLLVMX86AsmParser     -lLLVMX86Desc     -lLLVMX86Info     -lLLVMX86AsmPrinter     -lLLVMX86Utils -lLLVMDebugInfoCodeView -lLLVMInstrumentation -lLLVMProfileData -lz -lcurses -lpthread";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(ASAN_OTHER_LDFLAGS)",
+					"$(LLVM_LIBS_macosx)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/include";
+			};
+			name = Release;
+		};
+		CB22109D20635B5100746175 /* Profiling */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"\"${BUILT_PRODUCTS_DIR}/usr/local/include\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
+				LLVM_LIBS_macosx = "-lLLVMLinker -lLLVMipo -lLLVMVectorize -lLLVMIRReader -lLLVMBitReader -lLLVMAsmParser -lLLVMSelectionDAG -lLLVMAsmPrinter -lLLVMMCParser -lLLVMDebugInfoDWARF -lLLVMOption -lLLVMCodeGen -lLLVMScalarOpts -lLLVMInstCombine -lLLVMTransformUtils  -lLLVMAnalysis -lLLVMMCDisassembler -lLLVMMCJIT -lLLVMTarget -lLLVMRuntimeDyld -lLLVMExecutionEngine -lLLVMMC -lLLVMObject -lLLVMCore -lLLVMSupport -lLLVMX86Disassembler     -lLLVMX86CodeGen     -lLLVMX86AsmParser     -lLLVMX86Desc     -lLLVMX86Info     -lLLVMX86AsmPrinter     -lLLVMX86Utils -lLLVMDebugInfoCodeView -lLLVMInstrumentation -lLLVMProfileData -lz -lcurses -lpthread";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(ASAN_OTHER_LDFLAGS)",
+					"$(LLVM_LIBS_macosx)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/include";
+			};
+			name = Profiling;
+		};
+		CB22109E20635B5100746175 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					"\"${BUILT_PRODUCTS_DIR}/usr/local/include\"",
+					"$(HEADER_SEARCH_PATHS)",
+					"$(SRCROOT)/llvmForJSC/llvm3_9/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/bin";
+				LLVM_LIBS_macosx = "-lLLVMLinker -lLLVMipo -lLLVMVectorize -lLLVMIRReader -lLLVMBitReader -lLLVMAsmParser -lLLVMSelectionDAG -lLLVMAsmPrinter -lLLVMMCParser -lLLVMDebugInfoDWARF -lLLVMOption -lLLVMCodeGen -lLLVMScalarOpts -lLLVMInstCombine -lLLVMTransformUtils  -lLLVMAnalysis -lLLVMMCDisassembler -lLLVMMCJIT -lLLVMTarget -lLLVMRuntimeDyld -lLLVMExecutionEngine -lLLVMMC -lLLVMObject -lLLVMCore -lLLVMSupport -lLLVMX86Disassembler     -lLLVMX86CodeGen     -lLLVMX86AsmParser     -lLLVMX86Desc     -lLLVMX86Info     -lLLVMX86AsmPrinter     -lLLVMX86Utils -lLLVMDebugInfoCodeView -lLLVMInstrumentation -lLLVMProfileData -lz -lcurses -lpthread";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(ASAN_OTHER_LDFLAGS)",
+					"$(LLVM_LIBS_macosx)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/llvmForJSC/llvm3_9/include";
+			};
+			name = Production;
 		};
 		FE533CA81F217DB30016A1FE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -11044,6 +11500,17 @@
 				65FB3F7909D11EBD00F49DEB /* Release */,
 				A76148400E6402F700E357FA /* Profiling */,
 				65FB3F7A09D11EBD00F49DEB /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+		CB22109A20635B5100746175 /* Build configuration list for PBXNativeTarget "llvmForJSC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB22109B20635B5100746175 /* Debug */,
+				CB22109C20635B5100746175 /* Release */,
+				CB22109D20635B5100746175 /* Profiling */,
+				CB22109E20635B5100746175 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Production;

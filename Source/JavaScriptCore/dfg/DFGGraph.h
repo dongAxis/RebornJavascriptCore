@@ -25,6 +25,8 @@
 
 #pragma once
 
+#include "config.h"
+
 #if ENABLE(DFG_JIT)
 
 #include "AssemblyHelpers.h"
@@ -40,6 +42,8 @@
 #include "DFGGraphWriter.h"
 #include "FullBytecodeLiveness.h"
 #include "MethodOfGettingAValueProfile.h"
+#include "LLVMConfig.h"
+#include "LLVMOptDominator.h"
 #include <unordered_map>
 #include <wtf/BitVector.h>
 #include <wtf/HashMap.h>
@@ -1088,6 +1092,10 @@ public:
     std::unique_ptr<BackwardsCFG> m_backwardsCFG;
     std::unique_ptr<BackwardsDominators> m_backwardsDominators;
     std::unique_ptr<ControlEquivalenceAnalysis> m_controlEquivalenceAnalysis;
+#if HAS_LLVM_OPT
+    std::unique_ptr<LLVMOptDominator> llvmOptDominator;
+#endif
+    
     unsigned m_localVars;
     unsigned m_nextMachineLocal;
     unsigned m_parameterSlots;
